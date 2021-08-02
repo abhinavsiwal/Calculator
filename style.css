@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  box-sizing: border-box;
+
+}
+body{
+   background-color: black;
+}
+.container{
+    height: 90vh;
+    width: 100%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.calculator{
+    height: 90%px;
+    width: 440px;
+    background-color: #e8f7f3;
+    box-shadow: 8px 4px 11px 2px rgba(7, 23, 27, 0.75);
+    display: flex;
+    flex-direction: column;
+}
+.result{
+    background-color: white;
+    height: 30%;
+
+}
+.keyboard{
+    display: grid;
+    grid-template-columns:repeat(4,auto);
+    grid-gap:4px;
+}
+.operator, .numbers, .empty {
+    width: 70px;
+    height: 51px;
+    margin: 19px;
+    float: right;
+    border-radius: 50px;
+    border-width: 0px;
+    font-weight: bold;
+    font-size: 22px;
+}
+.numbers,.empty{
+    background-color: white;
+
+}
+.numbers,.operator{
+    cursor: pointer;
+}
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0px 20px;
+    padding-top: 20px;
+    font-size: 1.8rem;
+
+}
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 80px 20px;
+    font-size: 3rem;
+
+}
+/* Grow */
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover {
+    transform: scale(1.3);
+}
+button:nth-child(1){
+    font-size: 30px;
+    background-color: teal;
+}
+button:nth-child(5){
+    font-size: 30px;
+    background-color:orange;
+}
+button:nth-child(9){
+    font-size: 30px;
+    background-color:pink;
+}
+button:nth-child(13){
+    font-size: 30px;
+    background-color:lightblue;
+}
+button:nth-child(17){
+    font-size: 30px;
+    background-color:purple;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:432px) {
+    .calculator{
+        width: 100%;
+        
+    }
+    .operator, .numbers, .empty {
+    
+        margin: 9px;
+ 
+    }
+}
+@media screen and (max-width:360px) {
+    .operator, .numbers, .empty {
+       
+        margin: 6px;
+ 
+    }
+}
